@@ -1,12 +1,8 @@
 <?php
   for ($i = 1; $i <=100; $i++){
+    $star = "*";
 
-    if ( $i % 4 == 0) {
-      echo "PIN" . PHP_EOL;
-    }
-    else {
-      echo $i . PHP_EOL;
-    }
+    echo ( str_repeat( $star, $i ) ) . PHP_EOL;
 
   }
 ?>
