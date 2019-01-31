@@ -1,18 +1,17 @@
 <?php
-for ($k = 0; $k <= 3; $k++) {
-
-  for ($i = 1; $i <=5; $i++){
-    $star = "";
-
-    for ($j = 0; $j < $i ; $j++) {
-      $star .= "*";
-
-      //echo ( str_repeat( $star, $i ) ) . PHP_EOL;
+  function Fibonacci($number) {
+    if ($number == 0) {
+        return 0;
+    } else if ($number == 1) {
+        return 1;
+    } else {
+        return (Fibonacci($number-1) + Fibonacci($number-2));
     }
-
-    echo $star . PHP_EOL;
-
   }
 
-}
+  $number = 14;
+
+  for ($counter = 0; $counter < $number; $counter++){
+    echo Fibonacci($counter) . PHP_EOL;
+  }
 ?>
